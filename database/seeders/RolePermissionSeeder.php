@@ -27,18 +27,9 @@ class RolePermissionSeeder extends Seeder
             ],
             'roles' => [
                 'superadmin',
-                'teacher',
                 'student'
             ],
             'role_permissions' => [
-                'teacher' => [
-                    'profile' => ['view', 'edit'],
-                    'course' => ['create', 'view', 'edit', 'delete'],
-                    'lesson' => ['create', 'view', 'edit', 'delete'],
-                    'exam' => ['create', 'view', 'edit', 'delete'],
-                    'certificate' => ['view'],
-                    'payment' => ['view'],
-                ],
                 'student' => [
                     'profile' => ['view', 'edit'],
                     'course' => ['view'],
@@ -50,7 +41,6 @@ class RolePermissionSeeder extends Seeder
             ],
             'user_roles' => [
                 'admin@iqbolshoh.uz' => 'superadmin',
-                'teacher@iqbolshoh.uz' => 'teacher',
                 'student@iqbolshoh.uz' => 'student',
             ]
         ];
